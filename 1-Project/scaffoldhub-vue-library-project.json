@@ -1,0 +1,292 @@
+{
+  "entities": [
+    {
+      "id": "13b0fb8a-c3c2-42db-b149-882f51b9f8b6",
+      "name": { "singular": "book", "plural": null },
+      "label": { "singular": "Book", "plural": "Books" },
+      "properties": {
+        "priority": 2,
+        "display": "bb0a46f0-cebc-4b75-abe3-b16bfa96689a"
+      },
+      "fields": [
+        {
+          "id": "bb0a46f0-cebc-4b75-abe3-b16bfa96689a",
+          "name": { "singular": "isbn", "plural": null },
+          "label": { "singular": "ISBN", "plural": null },
+          "properties": {
+            "text_html_type": "text",
+            "list": "yes",
+            "filter": "yes",
+            "exportable": "yes",
+            "priority": 1
+          },
+          "relation": {},
+          "validations": [
+            {
+              "id": "46156b7b-7b17-484d-ac6a-0dde7d1218ad",
+              "key": "required",
+              "value": true
+            },
+            {
+              "id": "4b775dd2-f4f1-4407-b032-6ed96e029f92",
+              "key": "maxlength",
+              "value": 13
+            },
+            {
+              "id": "05f365bd-d30f-4890-a5da-ab5b2bc21d62",
+              "key": "minlength",
+              "value": 13
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "id": "4003e0cf-f0c8-4f08-bcde-99e05a624fe8",
+          "name": { "singular": "title", "plural": null },
+          "label": { "singular": "Title", "plural": null },
+          "properties": {
+            "text_html_type": "text",
+            "list": "yes",
+            "filter": "yes",
+            "exportable": "yes",
+            "priority": 2
+          },
+          "relation": {},
+          "validations": [
+            {
+              "id": "92ce0afd-b0bc-42cd-b059-9de05dc53cae",
+              "key": "required",
+              "value": true
+            },
+            {
+              "id": "5a326b47-8e20-4131-9733-ae4eaab38d69",
+              "key": "maxlength",
+              "value": 255
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "id": "9e7c623f-3621-4289-89e6-ba47f9027e7c",
+          "name": { "singular": "author", "plural": null },
+          "label": { "singular": "Author", "plural": null },
+          "properties": {
+            "text_html_type": "text",
+            "list": "yes",
+            "filter": "yes",
+            "exportable": "yes",
+            "priority": 3
+          },
+          "relation": {},
+          "validations": [
+            {
+              "id": "c867cdca-87d7-4820-9e17-b84481ec6828",
+              "key": "required",
+              "value": true
+            },
+            {
+              "id": "e16bf73a-894b-47cc-8e6a-56a26302455f",
+              "key": "maxlength",
+              "value": 255
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "id": "12a60955-06c7-4751-9e29-03a34109eb51",
+          "name": { "singular": "numberOfCopies", "plural": null },
+          "label": { "singular": "Number Of Copies", "plural": null },
+          "properties": {
+            "list": "no",
+            "filter": "no",
+            "exportable": "yes",
+            "priority": 4
+          },
+          "relation": {},
+          "validations": [
+            {
+              "id": "db9dba13-3cd0-4bce-b5a2-bfbdc06951ec",
+              "key": "required",
+              "value": true
+            },
+            {
+              "id": "3ef129a1-2506-47cc-b722-31867370d953",
+              "key": "min",
+              "value": 1
+            }
+          ],
+          "type": "integer"
+        },
+        {
+          "id": "c104d433-4cdb-4479-a4d4-872d67c7ceb8",
+          "name": { "singular": "stock", "plural": null },
+          "label": { "singular": "Stock", "plural": null },
+          "properties": {
+            "list": "no",
+            "filter": "no",
+            "exportable": "yes",
+            "priority": 5
+          },
+          "relation": {},
+          "validations": [],
+          "type": "integer"
+        },
+        {
+          "id": "443400c3-a909-47f3-9257-448d68c63f6a",
+          "name": { "singular": "images", "plural": null },
+          "label": { "singular": "Images", "plural": null },
+          "properties": { "list": "yes", "exportable": "yes", "priority": 6 },
+          "relation": {},
+          "validations": [
+            {
+              "id": "41a4cd3a-388c-49a0-9e8d-4bab9eff0c06",
+              "key": "max",
+              "value": 3
+            },
+            {
+              "id": "b4a066de-736d-4202-ae0e-0fefc102f55d",
+              "key": "size",
+              "value": 3000000
+            }
+          ],
+          "type": "images"
+        },
+        {
+          "id": "e0695345-939c-4ea4-bda3-515a56d6e0b9",
+          "name": { "singular": "status", "plural": null },
+          "label": { "singular": "Status", "plural": null },
+          "properties": {
+            "enumerator_html_type": "select",
+            "list": "yes",
+            "filter": "yes",
+            "exportable": "yes",
+            "priority": 7,
+            "options": "available,unavailable"
+          },
+          "relation": {},
+          "validations": [],
+          "type": "enumerator"
+        }
+      ]
+    },
+    {
+      "id": "77a0ad89-cad8-4cfb-87ec-d18e0be0443d",
+      "name": { "singular": "loan", "plural": null },
+      "label": { "singular": "Loan", "plural": "Loans" },
+      "properties": { "priority": 1 },
+      "fields": [
+        {
+          "id": "6f41d8b6-da09-473d-b28e-d1d2b73dc017",
+          "name": { "singular": "book", "plural": null },
+          "label": { "singular": "Book", "plural": null },
+          "properties": {
+            "list": "yes",
+            "filter": "yes",
+            "exportable": "yes",
+            "priority": 1
+          },
+          "relation": { "entity": "13b0fb8a-c3c2-42db-b149-882f51b9f8b6" },
+          "validations": [
+            {
+              "id": "fc9ce05e-613a-4a09-a5b0-6806b93c02ea",
+              "key": "required",
+              "value": true
+            }
+          ],
+          "type": "relation_one"
+        },
+        {
+          "id": "fb3b2434-3fce-4f7c-bddc-9dd622b2be3a",
+          "name": { "singular": "member", "plural": null },
+          "label": { "singular": "Member", "plural": null },
+          "properties": {
+            "list": "yes",
+            "filter": "yes",
+            "exportable": "yes",
+            "priority": 2
+          },
+          "relation": {},
+          "validations": [
+            {
+              "id": "de9b7c6f-eddd-42f2-8c81-0573b312ea65",
+              "key": "required",
+              "value": true
+            }
+          ],
+          "type": "user_one"
+        },
+        {
+          "id": "c5330bf1-d4de-4940-89a8-0f3c084dde97",
+          "name": { "singular": "issueDate", "plural": null },
+          "label": { "singular": "Issue Date", "plural": null },
+          "properties": {
+            "list": "yes",
+            "filter": "yes",
+            "exportable": "yes",
+            "priority": 3
+          },
+          "relation": {},
+          "validations": [
+            {
+              "id": "bf1fd68f-7d3f-4259-9498-f90bc653b810",
+              "key": "required",
+              "value": true
+            }
+          ],
+          "type": "datetime"
+        },
+        {
+          "id": "20b8ffe2-5a42-4c5c-9db4-932f1abaceb1",
+          "name": { "singular": "dueDate", "plural": null },
+          "label": { "singular": "Due Date", "plural": null },
+          "properties": {
+            "list": "yes",
+            "filter": "yes",
+            "exportable": "yes",
+            "priority": 4
+          },
+          "relation": {},
+          "validations": [
+            {
+              "id": "e6b4e39b-1a18-4667-a1ea-5e51083e7eac",
+              "key": "required",
+              "value": true
+            }
+          ],
+          "type": "datetime"
+        },
+        {
+          "id": "d9c72631-2c31-4c53-9911-9cbb0e003873",
+          "name": { "singular": "returnDate", "plural": null },
+          "label": { "singular": "Return Date", "plural": null },
+          "properties": {
+            "list": "yes",
+            "filter": "yes",
+            "exportable": "yes",
+            "priority": 5
+          },
+          "relation": {},
+          "validations": [],
+          "type": "datetime"
+        },
+        {
+          "id": "04a37e01-bf7d-4310-bbbd-44ca77087bbd",
+          "name": { "singular": "status", "plural": null },
+          "label": { "singular": "Status", "plural": null },
+          "properties": {
+            "enumerator_html_type": "select",
+            "list": "yes",
+            "filter": "yes",
+            "exportable": "yes",
+            "priority": 6,
+            "options": "inProgress,overdue,closed"
+          },
+          "relation": {},
+          "validations": [],
+          "type": "enumerator"
+        }
+      ]
+    }
+  ],
+  "properties": { "platform": "docker", "api": "rest" }
+}

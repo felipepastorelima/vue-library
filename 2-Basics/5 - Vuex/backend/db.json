@@ -1,0 +1,12 @@
+{
+  "todo": [
+    {
+      "id": 1,
+      "text": "Create a Vue app"
+    },
+    {
+      "text": "Create a backend",
+      "id": 2
+    }
+  ]
+}
