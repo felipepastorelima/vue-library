@@ -1,0 +1,27 @@
+.filter {
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.filter .el-select {
+  width: 100%;
+}
+
+.filter .filter-buttons {
+  text-align: right;
+}
+
+.filter .filter-buttons > * {
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+.filter .el-date-editor--datetimerange.el-input__inner {
+  width: 100%;
+}
+
+.filter .el-date-editor--daterange.el-input__inner {
+  width: 100%;
+}

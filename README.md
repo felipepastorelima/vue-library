@@ -6,12 +6,13 @@ The course uses ScaffoldHub.io (https://scaffoldhub.io) to create the initial ap
 
 Course Webpage: https://scaffoldhub.io/courses/vue-library
 
-## Scaffold
+## Base Application
+
+The base project is at the 1-Project folder.
 
 Vue Element UI with SQL or MongoDB
-Version: 1.2.1
 
-The ScaffoldHub project file needed to generate the application is at the 1-Project folder.
+Version: 1.2.1
 
 ## Basics
 

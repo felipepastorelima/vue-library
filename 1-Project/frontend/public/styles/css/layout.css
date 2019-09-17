@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', SimSun,
+    sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+#nprogress .bar {
+  background: var(--color-primary) !important;
+}
+
+.logo {
+  text-align: center;
+  width: 100%;
+}
+
+.logo a {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.el-header {
+  background-color: white;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.el-header .header-actions {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.el-aside {
+  background-color: white;
+  border-right: solid 1px #e6e6e6;
+  min-height: 100vh;
+}
+
+.el-menu {
+  border-right: 0px !important;
+  height: calc(100% - 60px);
+}
+
+.el-header .el-dropdown-link-body {
+  cursor: pointer;
+  height: 60px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.el-main {
+  background-color: #f0f2f5;
+}
+
+.el-header .i18n-select {
+  margin-right: 24px;
+}
+
+.el-aside {
+  flex-shrink: 0;
+}
+
+.el-menu-side-nav {
+  flex-shrink: 0;
+}
+
+.el-menu-side-nav.hidden {
+  display: none;
+}
+
+.el-menu-item.active {
+  background-color: var(--color-primary-light-9);
+  border-right: 2px var(--color-primary-light-2) solid;
+  color: var(--color-primary-light-2);
+  outline: none;
+  font-weight: bold;
+}
+
+.el-menu-item.active i {
+  color: var(--color-primary-light-2);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .hide-xs {
+    display: none;
+  }
+}
+
+.app-content-page {
+  margin-top: 16px;
+  padding: 24px;
+  background: #fff;
+  overflow-y: hidden;
+  border-radius: 5px;
+  border: 1px rgb(233, 233, 233) solid;
+}
+
+.app-content-title {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-size: 1.75em;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+}
+
+.app-page-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 48px;
+}
+
+.app-page-toolbar {
+  margin-bottom: 24px;
+}
+
+.app-page-toolbar > * {
+  margin-right: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+.app-page-toolbar .el-button {
+  margin-bottom: 8px !important;
+}
+
+.app-page-toolbar .el-button + .el-button {
+  margin-left: 0px;
+}
+
+.app-divider {
+  display: table;
+  white-space: nowrap;
+  text-align: center;
+  background: transparent;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 16px;
+  margin: 16px 0;
+
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: 24px 0;
+  clear: both;
+
+  position: relative;
+  top: -0.06em;
+
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.65);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #e8e8e8;
+}
+
+.app-avatar {
+  border: 1px solid #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.65);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  background: #ccc;
+  color: #fff;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 50%;
+}
+
+.app-avatar > * {
+  line-height: 32px;
+  margin-left: 1px;
+}
+
+.app-avatar.app-avatar-sm {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 50%;
+}
+
+.app-avatar.app-avatar-sm > * {
+  line-height: 24px;
+}
+
+.app-avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}

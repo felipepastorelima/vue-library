@@ -1,0 +1,16 @@
+{
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "prettier.eslintIntegration": true,
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#000",
+    "titleBar.inactiveForeground": "#000000CC",
+    "titleBar.activeBackground": "#ffc600",
+    "titleBar.inactiveBackground": "#ffc600CC"
+  },
+  "vetur.format.defaultFormatterOptions": {
+    "prettyhtml": {
+      "sortAttributes": true
+    }
+  }
+}

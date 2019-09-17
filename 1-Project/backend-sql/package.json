@@ -1,0 +1,37 @@
+{
+  "name": "app-backend",
+  "description": "Backend",
+  "scripts": {
+    "start": "cross-env NODE_ENV=localhost nodemon ./server.js",
+    "start:production": "cross-env NODE_ENV=production nodemon ./server.js",
+    "test": "nodemon --exec 'cross-env NODE_ENV=test mocha ./src/**/*.test.js --exit || exit 1'",
+    "db:reset:localhost": "cross-env MIGRATION_ENV=localhost node ./migrations/reset",
+    "db:reset:production": "cross-env MIGRATION_ENV=production node ./migrations/reset"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.16.4",
+    "lodash": "4.17.11",
+    "moment": "2.24.0",
+    "nodemailer": "5.1.1",
+    "mysql2": "1.6.5",
+    "pg": "7.8.1",
+    "pg-hstore": "2.3.2",
+    "sequelize": "4.42.1",
+    "sqlite": "3.0.2",
+    "jsonwebtoken": "8.5.1",
+    "bcrypt": "3.0.6",
+    "formidable": "1.2.1"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "private": true,
+  "devDependencies": {
+    "cross-env": "5.2.0",
+    "mocha": "6.0.2",
+    "node-mocks-http": "1.7.3",
+    "nodemon": "1.18.10",
+    "sequelize-cli": "5.4.0"
+  }
+}

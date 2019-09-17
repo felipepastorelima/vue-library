@@ -1,0 +1,29 @@
+.form .form-buttons {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.form .form-buttons > * {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.form .form-buttons .el-button + .el-button {
+  margin-left: 0px;
+}
+
+.form .form-field {
+  margin-top: 8px;
+}
+
+.form .el-input {
+  width: 100% !important;
+}
+
+.form .el-input-number {
+  width: 100% !important;
+}
+
+.form .el-select {
+  width: 100%;
+}

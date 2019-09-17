@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+  app:
+    build: .
+    ports:
+      - '8080:8080'
+    depends_on:
+      - postgres
+    volumes:
+      - storage:/storage
+  postgres:
+    image: postgres
+    restart: always
+    ports:
+      - '5432:5432'
+    volumes:
+      - data-volume:/var/lib/postgresql/data
+volumes:
+  data-volume:
+  storage:

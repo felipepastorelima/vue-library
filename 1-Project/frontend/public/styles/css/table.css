@@ -1,0 +1,15 @@
+.el-table {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.el-pagination-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 24px;
+}
+
+.el-table .table-actions > * {
+  margin-right: 8px;
+}
