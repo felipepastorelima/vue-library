@@ -19,7 +19,7 @@
     "pg-hstore": "2.3.2",
     "sequelize": "4.42.1",
     "sqlite": "3.0.2",
-    "jsonwebtoken": "8.5.1",
+    "jsonwebtoken": "9.0.0",
     "bcrypt": "3.0.6",
     "formidable": "1.2.1"
   },
